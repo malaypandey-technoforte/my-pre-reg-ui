@@ -1,0 +1,41 @@
+{
+  "$schema": "../../node_modules/ng-packagr/package.schema.json",
+  "name": "ngx7-material-keyboard",
+  "version": "0.1.2",
+  "description": "Modified version of the ngx-material-keyboard onscreen virtual keyboard (https://github.com/ngx-material-keyboard/core) to support Angular ≥ 7 (https://angular.io/) using Material 7 (https://material.angular.io/)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joskwanten/core.git"
+  },
+  "author": "David Enke <post@davidenke.de>, Jos Kwanten <jos.kwanten@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngx-material-keyboard/core/issues"
+  },
+  "homepage": "https://github.com/joskwanten/core",
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@angular/animations": "^7.1.4",
+    "@angular/cdk": "^7.2.0",
+    "@angular/common": "^7.1.4",
+    "@angular/core": "^7.1.4",
+    "@angular/forms": "^7.1.4",
+    "@angular/material": "^7.2.0",
+    "rxjs": "^6.3.3"
+  },
+  "main": "bundles/ngx7-material-keyboard.umd.js",
+  "module": "fesm5/ngx7-material-keyboard.js",
+  "es2015": "fesm2015/ngx7-material-keyboard.js",
+  "esm5": "esm5/ngx7-material-keyboard.js",
+  "esm2015": "esm2015/ngx7-material-keyboard.js",
+  "fesm5": "fesm5/ngx7-material-keyboard.js",
+  "fesm2015": "fesm2015/ngx7-material-keyboard.js",
+  "typings": "ngx7-material-keyboard.d.ts",
+  "metadata": "ngx7-material-keyboard.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

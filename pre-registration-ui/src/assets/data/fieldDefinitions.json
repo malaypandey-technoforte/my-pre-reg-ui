@@ -1,0 +1,3266 @@
+[
+    {
+        "id": "fullName1",
+        "description": "Enter Full Name",
+        "labelName": {
+            "eng": "Full Name",
+            "ara": "الاسم الكامل",
+            "fra": "Nom complet"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "dateOfBirth1",
+        "description": "Enter DOB",
+        "labelName": {
+            "eng": "Date Of Birth",
+            "ara": "تاريخ الولادة",
+            "fra": "Date de naissance"
+        },
+        "controlType": "ageDate",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "gender1",
+        "description": "Enter Gender",
+        "labelName": {
+            "eng": "Gender",
+            "ara": "جنس",
+            "fra": "Le genre"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "gender",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "residenceStatus1",
+        "description": "Residence status",
+        "labelName": {
+            "eng": "Residence Status",
+            "ara": "حالة الإقامة",
+            "fra": "Statut de résidence"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "residenceStatus",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "1addressLine1",
+        "description": "addressLine1",
+        "labelName": {
+            "eng": "Address Line1",
+            "ara": "العنوان السطر 1",
+            "fra": "Adresse 1"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "1addressLine2",
+        "description": "addressLine2",
+        "labelName": {
+            "eng": "Address Line2",
+            "ara": "العنوان السطر 2",
+            "fra": "Adresse 2"
+        },
+        "controlType": "textbox",
+        "inputRequired": false,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "1addressLine3",
+        "description": "addressLine3",
+        "labelName": {
+            "eng": "Address Line3",
+            "ara": "العنوان السطر 3",
+            "fra": "Adresse 3"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "region1",
+        "description": "region",
+        "labelName": {
+            "eng": "Region",
+            "ara": "منطقة",
+            "fra": "Région"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "parentLocCode": "MOR",
+        "locationHierarchyLevel": 1,
+        "required": true
+    },
+    {
+        "id": "province1",
+        "description": "province",
+        "labelName": {
+            "eng": "Province",
+            "ara": "المحافظة",
+            "fra": "Province"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 2,
+        "required": true
+    },
+    {
+        "id": "city1",
+        "description": "city",
+        "labelName": {
+            "eng": "City",
+            "ara": "مدينة",
+            "fra": "Ville"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 3,
+        "required": true
+    },
+    {
+        "id": "zone1",
+        "description": "zone",
+        "labelName": {
+            "eng": "Zone",
+            "ara": "منطقة",
+            "fra": "Zone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "locationHierarchyLevel": 4,
+        "required": true
+    },
+    {
+        "id": "postalCode1",
+        "description": "postalCode",
+        "labelName": {
+            "eng": "Postal Code",
+            "ara": "الكود البريدى",
+            "fra": "code postal"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[(?i)A-Z0-9]{5}$|^NA$",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 5,
+        "required": true
+    },
+    {
+        "id": "phone1",
+        "description": "phone",
+        "labelName": {
+            "eng": "Phone",
+            "ara": "هاتف",
+            "fra": "Téléphone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^([6-9]{1})([0-9]{9})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "email1",
+        "description": "email",
+        "labelName": {
+            "eng": "Email",
+            "ara": "البريد الإلكتروني",
+            "fra": "Email"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-zA-Z]{2,})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "salary1",
+        "description": "Enter Salary",
+        "labelName": {
+            "eng": "Salary",
+            "ara": "راتب",
+            "fra": "Salaire"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "number",
+        "subType": "salary",
+        "type": "string",
+        "validators": [
+            {
+                "type": "min",
+                "value": 0,
+                "message": {
+                    "eng": "Salary must be a positive number",
+                    "ara": "يجب أن يكون الراتب رقمًا موجبًا",
+                    "fra": "Le salaire doit être un nombre positif"
+                }
+            }
+        ],
+        "required": true,
+        "dependentFields": [
+            {
+                "fieldId": "panNumber1"
+            }
+        ]
+    },
+    {
+        "id": "panNumber1",
+        "description": "Enter Pan Number",
+        "labelName": {
+            "eng": "Pan Number",
+            "ara": "رقم بان",
+            "fra": "Numéro PAN"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "required": true,
+        "parentField": "salary1",
+        "isVisible": false,
+        "visibleCondition": {
+            "any": [
+                {
+                    "fact": "salary1",
+                    "operator": "greaterThanInclusive",
+                    "value": 7000
+                }
+            ]
+        }
+    },
+    {
+        "id": "fullName2",
+        "description": "Enter Full Name",
+        "labelName": {
+            "eng": "Full Name",
+            "ara": "الاسم الكامل",
+            "fra": "Nom complet"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "dateOfBirth2",
+        "description": "Enter DOB",
+        "labelName": {
+            "eng": "Date Of Birth",
+            "ara": "تاريخ الولادة",
+            "fra": "Date de naissance"
+        },
+        "controlType": "ageDate",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "gender2",
+        "description": "Enter Gender",
+        "labelName": {
+            "eng": "Gender",
+            "ara": "جنس",
+            "fra": "Le genre"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "gender",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "residenceStatus2",
+        "description": "Residence status",
+        "labelName": {
+            "eng": "Residence Status",
+            "ara": "حالة الإقامة",
+            "fra": "Statut de résidence"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "residenceStatus",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "2addressLine1",
+        "description": "addressLine1",
+        "labelName": {
+            "eng": "Address Line1",
+            "ara": "العنوان السطر 1",
+            "fra": "Adresse 1"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "2addressLine2",
+        "description": "addressLine2",
+        "labelName": {
+            "eng": "Address Line2",
+            "ara": "العنوان السطر 2",
+            "fra": "Adresse 2"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "2addressLine3",
+        "description": "addressLine3",
+        "labelName": {
+            "eng": "Address Line3",
+            "ara": "العنوان السطر 3",
+            "fra": "Adresse 3"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "region2",
+        "description": "region",
+        "labelName": {
+            "eng": "Region",
+            "ara": "منطقة",
+            "fra": "Région"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "parentLocCode": "MOR",
+        "locationHierarchyLevel": 1,
+        "required": true
+    },
+    {
+        "id": "province2",
+        "description": "province",
+        "labelName": {
+            "eng": "Province",
+            "ara": "المحافظة",
+            "fra": "Province"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 2,
+        "required": true
+    },
+    {
+        "id": "city2",
+        "description": "city",
+        "labelName": {
+            "eng": "City",
+            "ara": "مدينة",
+            "fra": "Ville"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 3,
+        "required": true
+    },
+    {
+        "id": "zone2",
+        "description": "zone",
+        "labelName": {
+            "eng": "Zone",
+            "ara": "منطقة",
+            "fra": "Zone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "locationHierarchyLevel": 4,
+        "required": true
+    },
+    {
+        "id": "postalCode2",
+        "description": "postalCode",
+        "labelName": {
+            "eng": "Postal Code",
+            "ara": "الكود البريدى",
+            "fra": "code postal"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[(?i)A-Z0-9]{5}$|^NA$",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 5,
+        "required": true
+    },
+    {
+        "id": "phone2",
+        "description": "phone",
+        "labelName": {
+            "eng": "Phone",
+            "ara": "هاتف",
+            "fra": "Téléphone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^([6-9]{1})([0-9]{9})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "email2",
+        "description": "email",
+        "labelName": {
+            "eng": "Email",
+            "ara": "البريد الإلكتروني",
+            "fra": "Email"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-zA-Z]{2,})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "salary2",
+        "description": "Enter Salary",
+        "labelName": {
+            "eng": "Salary",
+            "ara": "راتب",
+            "fra": "Salaire"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "number",
+        "subType": "salary",
+        "type": "string",
+        "validators": [
+            {
+                "type": "min",
+                "value": 0,
+                "message": {
+                    "eng": "Salary must be a positive number",
+                    "ara": "يجب أن يكون الراتب رقمًا موجبًا",
+                    "fra": "Le salaire doit être un nombre positif"
+                }
+            }
+        ],
+        "required": true,
+        "dependentFields": [
+            {
+                "fieldId": "panNumber2"
+            }
+        ]
+    },
+    {
+        "id": "panNumber2",
+        "description": "Enter Pan Number",
+        "labelName": {
+            "eng": "Pan Number",
+            "ara": "رقم بان",
+            "fra": "Numéro PAN"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "required": true,
+        "parentField": "salary2",
+        "isVisible": false,
+        "visibleCondition": {
+            "any": [
+                {
+                    "fact": "salary2",
+                    "operator": "greaterThanInclusive",
+                    "value": 7000
+                }
+            ]
+        }
+    },
+    {
+        "id": "fullName3",
+        "description": "Enter Full Name",
+        "labelName": {
+            "eng": "Full Name",
+            "ara": "الاسم الكامل",
+            "fra": "Nom complet"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "dateOfBirth3",
+        "description": "Enter DOB",
+        "labelName": {
+            "eng": "Date Of Birth",
+            "ara": "تاريخ الولادة",
+            "fra": "Date de naissance"
+        },
+        "controlType": "ageDate",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "gender3",
+        "description": "Enter Gender",
+        "labelName": {
+            "eng": "Gender",
+            "ara": "جنس",
+            "fra": "Le genre"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "gender",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "residenceStatus3",
+        "description": "Residence status",
+        "labelName": {
+            "eng": "Residence Status",
+            "ara": "حالة الإقامة",
+            "fra": "Statut de résidence"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "residenceStatus",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "3addressLine1",
+        "description": "addressLine1",
+        "labelName": {
+            "eng": "Address Line1",
+            "ara": "العنوان السطر 1",
+            "fra": "Adresse 1"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "3addressLine2",
+        "description": "addressLine2",
+        "labelName": {
+            "eng": "Address Line2",
+            "ara": "العنوان السطر 2",
+            "fra": "Adresse 2"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "3addressLine3",
+        "description": "addressLine3",
+        "labelName": {
+            "eng": "Address Line3",
+            "ara": "العنوان السطر 3",
+            "fra": "Adresse 3"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "region3",
+        "description": "region",
+        "labelName": {
+            "eng": "Region",
+            "ara": "منطقة",
+            "fra": "Région"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "parentLocCode": "MOR",
+        "locationHierarchyLevel": 1,
+        "required": true
+    },
+    {
+        "id": "province3",
+        "description": "province",
+        "labelName": {
+            "eng": "Province",
+            "ara": "المحافظة",
+            "fra": "Province"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 2,
+        "required": true
+    },
+    {
+        "id": "city3",
+        "description": "city",
+        "labelName": {
+            "eng": "City",
+            "ara": "مدينة",
+            "fra": "Ville"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 3,
+        "required": true
+    },
+    {
+        "id": "zone3",
+        "description": "zone",
+        "labelName": {
+            "eng": "Zone",
+            "ara": "منطقة",
+            "fra": "Zone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "locationHierarchyLevel": 4,
+        "required": true
+    },
+    {
+        "id": "postalCode3",
+        "description": "postalCode",
+        "labelName": {
+            "eng": "Postal Code",
+            "ara": "الكود البريدى",
+            "fra": "code postal"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[(?i)A-Z0-9]{5}$|^NA$",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 5,
+        "required": true
+    },
+    {
+        "id": "phone3",
+        "description": "phone",
+        "labelName": {
+            "eng": "Phone",
+            "ara": "هاتف",
+            "fra": "Téléphone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^([6-9]{1})([0-9]{9})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "email3",
+        "description": "email",
+        "labelName": {
+            "eng": "Email",
+            "ara": "البريد الإلكتروني",
+            "fra": "Email"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-zA-Z]{2,})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "salary3",
+        "description": "Enter Salary",
+        "labelName": {
+            "eng": "Salary",
+            "ara": "راتب",
+            "fra": "Salaire"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "number",
+        "subType": "salary",
+        "type": "string",
+        "validators": [
+            {
+                "type": "min",
+                "value": 0,
+                "message": {
+                    "eng": "Salary must be a positive number",
+                    "ara": "يجب أن يكون الراتب رقمًا موجبًا",
+                    "fra": "Le salaire doit être un nombre positif"
+                }
+            }
+        ],
+        "required": true,
+        "dependentFields": [
+            {
+                "fieldId": "panNumber3"
+            }
+        ]
+    },
+    {
+        "id": "panNumber3",
+        "description": "Enter Pan Number",
+        "labelName": {
+            "eng": "Pan Number",
+            "ara": "رقم بان",
+            "fra": "Numéro PAN"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "required": true,
+        "parentField": "salary3",
+        "isVisible": false,
+        "visibleCondition": {
+            "any": [
+                {
+                    "fact": "salary3",
+                    "operator": "greaterThanInclusive",
+                    "value": 7000
+                }
+            ]
+        }
+    },
+    {
+        "id": "fullName4",
+        "description": "Enter Full Name",
+        "labelName": {
+            "eng": "Full Name",
+            "ara": "الاسم الكامل",
+            "fra": "Nom complet"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "dateOfBirth4",
+        "description": "Enter DOB",
+        "labelName": {
+            "eng": "Date Of Birth",
+            "ara": "تاريخ الولادة",
+            "fra": "Date de naissance"
+        },
+        "controlType": "ageDate",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "gender4",
+        "description": "Enter Gender",
+        "labelName": {
+            "eng": "Gender",
+            "ara": "جنس",
+            "fra": "Le genre"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "gender",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "residenceStatus4",
+        "description": "Residence status",
+        "labelName": {
+            "eng": "Residence Status",
+            "ara": "حالة الإقامة",
+            "fra": "Statut de résidence"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "residenceStatus",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "4addressLine1",
+        "description": "addressLine1",
+        "labelName": {
+            "eng": "Address Line1",
+            "ara": "العنوان السطر 1",
+            "fra": "Adresse 1"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "4addressLine2",
+        "description": "addressLine2",
+        "labelName": {
+            "eng": "Address Line2",
+            "ara": "العنوان السطر 2",
+            "fra": "Adresse 2"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "4addressLine3",
+        "description": "addressLine3",
+        "labelName": {
+            "eng": "Address Line3",
+            "ara": "العنوان السطر 3",
+            "fra": "Adresse 3"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "region4",
+        "description": "region",
+        "labelName": {
+            "eng": "Region",
+            "ara": "منطقة",
+            "fra": "Région"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "parentLocCode": "MOR",
+        "locationHierarchyLevel": 1,
+        "required": true
+    },
+    {
+        "id": "province4",
+        "description": "province",
+        "labelName": {
+            "eng": "Province",
+            "ara": "المحافظة",
+            "fra": "Province"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 2,
+        "required": true
+    },
+    {
+        "id": "city4",
+        "description": "city",
+        "labelName": {
+            "eng": "City",
+            "ara": "مدينة",
+            "fra": "Ville"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 3,
+        "required": true
+    },
+    {
+        "id": "zone4",
+        "description": "zone",
+        "labelName": {
+            "eng": "Zone",
+            "ara": "منطقة",
+            "fra": "Zone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "locationHierarchyLevel": 4,
+        "required": true
+    },
+    {
+        "id": "postalCode4",
+        "description": "postalCode",
+        "labelName": {
+            "eng": "Postal Code",
+            "ara": "الكود البريدى",
+            "fra": "code postal"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[(?i)A-Z0-9]{5}$|^NA$",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 5,
+        "required": true
+    },
+    {
+        "id": "phone4",
+        "description": "phone",
+        "labelName": {
+            "eng": "Phone",
+            "ara": "هاتف",
+            "fra": "Téléphone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^([6-9]{1})([0-9]{9})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "email4",
+        "description": "email",
+        "labelName": {
+            "eng": "Email",
+            "ara": "البريد الإلكتروني",
+            "fra": "Email"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-zA-Z]{2,})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "salary4",
+        "description": "Enter Salary",
+        "labelName": {
+            "eng": "Salary",
+            "ara": "راتب",
+            "fra": "Salaire"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "number",
+        "subType": "salary",
+        "type": "string",
+        "validators": [
+            {
+                "type": "min",
+                "value": 0,
+                "message": {
+                    "eng": "Salary must be a positive number",
+                    "ara": "يجب أن يكون الراتب رقمًا موجبًا",
+                    "fra": "Le salaire doit être un nombre positif"
+                }
+            }
+        ],
+        "required": true,
+        "dependentFields": [
+            {
+                "fieldId": "panNumber4"
+            }
+        ]
+    },
+    {
+        "id": "panNumber4",
+        "description": "Enter Pan Number",
+        "labelName": {
+            "eng": "Pan Number",
+            "ara": "رقم بان",
+            "fra": "Numéro PAN"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "required": true,
+        "parentField": "salary4",
+        "isVisible": false,
+        "visibleCondition": {
+            "any": [
+                {
+                    "fact": "salary4",
+                    "operator": "greaterThanInclusive",
+                    "value": 7000
+                }
+            ]
+        }
+    },
+    {
+        "id": "fullName5",
+        "description": "Enter Full Name",
+        "labelName": {
+            "eng": "Full Name",
+            "ara": "الاسم الكامل",
+            "fra": "Nom complet"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "dateOfBirth5",
+        "description": "Enter DOB",
+        "labelName": {
+            "eng": "Date Of Birth",
+            "ara": "تاريخ الولادة",
+            "fra": "Date de naissance"
+        },
+        "controlType": "ageDate",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "gender5",
+        "description": "Enter Gender",
+        "labelName": {
+            "eng": "Gender",
+            "ara": "جنس",
+            "fra": "Le genre"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "gender",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "residenceStatus5",
+        "description": "Residence status",
+        "labelName": {
+            "eng": "Residence Status",
+            "ara": "حالة الإقامة",
+            "fra": "Statut de résidence"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "residenceStatus",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "5addressLine1",
+        "description": "addressLine1",
+        "labelName": {
+            "eng": "Address Line1",
+            "ara": "العنوان السطر 1",
+            "fra": "Adresse 1"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "5addressLine2",
+        "description": "addressLine2",
+        "labelName": {
+            "eng": "Address Line2",
+            "ara": "العنوان السطر 2",
+            "fra": "Adresse 2"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "5addressLine3",
+        "description": "addressLine3",
+        "labelName": {
+            "eng": "Address Line3",
+            "ara": "العنوان السطر 3",
+            "fra": "Adresse 3"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "region5",
+        "description": "region",
+        "labelName": {
+            "eng": "Region",
+            "ara": "منطقة",
+            "fra": "Région"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "parentLocCode": "MOR",
+        "locationHierarchyLevel": 1,
+        "required": true
+    },
+    {
+        "id": "province5",
+        "description": "province",
+        "labelName": {
+            "eng": "Province",
+            "ara": "المحافظة",
+            "fra": "Province"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 2,
+        "required": true
+    },
+    {
+        "id": "city5",
+        "description": "city",
+        "labelName": {
+            "eng": "City",
+            "ara": "مدينة",
+            "fra": "Ville"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 3,
+        "required": true
+    },
+    {
+        "id": "zone5",
+        "description": "zone",
+        "labelName": {
+            "eng": "Zone",
+            "ara": "منطقة",
+            "fra": "Zone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "locationHierarchyLevel": 4,
+        "required": true
+    },
+    {
+        "id": "postalCode5",
+        "description": "postalCode",
+        "labelName": {
+            "eng": "Postal Code",
+            "ara": "الكود البريدى",
+            "fra": "code postal"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[(?i)A-Z0-9]{5}$|^NA$",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 5,
+        "required": true
+    },
+    {
+        "id": "phone5",
+        "description": "phone",
+        "labelName": {
+            "eng": "Phone",
+            "ara": "هاتف",
+            "fra": "Téléphone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^([6-9]{1})([0-9]{9})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "email5",
+        "description": "email",
+        "labelName": {
+            "eng": "Email",
+            "ara": "البريد الإلكتروني",
+            "fra": "Email"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-zA-Z]{2,})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "salary5",
+        "description": "Enter Salary",
+        "labelName": {
+            "eng": "Salary",
+            "ara": "راتب",
+            "fra": "Salaire"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "number",
+        "subType": "salary",
+        "type": "string",
+        "validators": [
+            {
+                "type": "min",
+                "value": 0,
+                "message": {
+                    "eng": "Salary must be a positive number",
+                    "ara": "يجب أن يكون الراتب رقمًا موجبًا",
+                    "fra": "Le salaire doit être un nombre positif"
+                }
+            }
+        ],
+        "required": true,
+        "dependentFields": [
+            {
+                "fieldId": "panNumber5"
+            }
+        ]
+    },
+    {
+        "id": "panNumber5",
+        "description": "Enter Pan Number",
+        "labelName": {
+            "eng": "Pan Number",
+            "ara": "رقم بان",
+            "fra": "Numéro PAN"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "required": true,
+        "parentField": "salary5",
+        "isVisible": false,
+        "visibleCondition": {
+            "any": [
+                {
+                    "fact": "salary5",
+                    "operator": "greaterThanInclusive",
+                    "value": 7000
+                }
+            ]
+        }
+    },
+    {
+        "id": "fullName6",
+        "description": "Enter Full Name",
+        "labelName": {
+            "eng": "Full Name",
+            "ara": "الاسم الكامل",
+            "fra": "Nom complet"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "dateOfBirth6",
+        "description": "Enter DOB",
+        "labelName": {
+            "eng": "Date Of Birth",
+            "ara": "تاريخ الولادة",
+            "fra": "Date de naissance"
+        },
+        "controlType": "ageDate",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "gender6",
+        "description": "Enter Gender",
+        "labelName": {
+            "eng": "Gender",
+            "ara": "جنس",
+            "fra": "Le genre"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "gender",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "residenceStatus6",
+        "description": "Residence status",
+        "labelName": {
+            "eng": "Residence Status",
+            "ara": "حالة الإقامة",
+            "fra": "Statut de résidence"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "residenceStatus",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "6addressLine1",
+        "description": "addressLine1",
+        "labelName": {
+            "eng": "Address Line1",
+            "ara": "العنوان السطر 1",
+            "fra": "Adresse 1"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "6addressLine2",
+        "description": "addressLine2",
+        "labelName": {
+            "eng": "Address Line2",
+            "ara": "العنوان السطر 2",
+            "fra": "Adresse 2"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "6addressLine3",
+        "description": "addressLine3",
+        "labelName": {
+            "eng": "Address Line3",
+            "ara": "العنوان السطر 3",
+            "fra": "Adresse 3"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "region6",
+        "description": "region",
+        "labelName": {
+            "eng": "Region",
+            "ara": "منطقة",
+            "fra": "Région"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "parentLocCode": "MOR",
+        "locationHierarchyLevel": 1,
+        "required": true
+    },
+    {
+        "id": "province6",
+        "description": "province",
+        "labelName": {
+            "eng": "Province",
+            "ara": "المحافظة",
+            "fra": "Province"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 2,
+        "required": true
+    },
+    {
+        "id": "city6",
+        "description": "city",
+        "labelName": {
+            "eng": "City",
+            "ara": "مدينة",
+            "fra": "Ville"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 3,
+        "required": true
+    },
+    {
+        "id": "zone6",
+        "description": "zone",
+        "labelName": {
+            "eng": "Zone",
+            "ara": "منطقة",
+            "fra": "Zone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "locationHierarchyLevel": 4,
+        "required": true
+    },
+    {
+        "id": "postalCode6",
+        "description": "postalCode",
+        "labelName": {
+            "eng": "Postal Code",
+            "ara": "الكود البريدى",
+            "fra": "code postal"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[(?i)A-Z0-9]{5}$|^NA$",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 5,
+        "required": true
+    },
+    {
+        "id": "phone6",
+        "description": "phone",
+        "labelName": {
+            "eng": "Phone",
+            "ara": "هاتف",
+            "fra": "Téléphone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^([6-9]{1})([0-9]{9})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "email6",
+        "description": "email",
+        "labelName": {
+            "eng": "Email",
+            "ara": "البريد الإلكتروني",
+            "fra": "Email"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-zA-Z]{2,})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "salary6",
+        "description": "Enter Salary",
+        "labelName": {
+            "eng": "Salary",
+            "ara": "راتب",
+            "fra": "Salaire"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "number",
+        "subType": "salary",
+        "type": "string",
+        "validators": [
+            {
+                "type": "min",
+                "value": 0,
+                "message": {
+                    "eng": "Salary must be a positive number",
+                    "ara": "يجب أن يكون الراتب رقمًا موجبًا",
+                    "fra": "Le salaire doit être un nombre positif"
+                }
+            }
+        ],
+        "required": true,
+        "dependentFields": [
+            {
+                "fieldId": "panNumber6"
+            }
+        ]
+    },
+    {
+        "id": "panNumber6",
+        "description": "Enter Pan Number",
+        "labelName": {
+            "eng": "Pan Number",
+            "ara": "رقم بان",
+            "fra": "Numéro PAN"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "required": true,
+        "parentField": "salary6",
+        "isVisible": false,
+        "visibleCondition": {
+            "any": [
+                {
+                    "fact": "salary6",
+                    "operator": "greaterThanInclusive",
+                    "value": 7000
+                }
+            ]
+        }
+    },
+    {
+        "id": "fullName7",
+        "description": "Enter Full Name",
+        "labelName": {
+            "eng": "Full Name",
+            "ara": "الاسم الكامل",
+            "fra": "Nom complet"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "dateOfBirth7",
+        "description": "Enter DOB",
+        "labelName": {
+            "eng": "Date Of Birth",
+            "ara": "تاريخ الولادة",
+            "fra": "Date de naissance"
+        },
+        "controlType": "ageDate",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "gender7",
+        "description": "Enter Gender",
+        "labelName": {
+            "eng": "Gender",
+            "ara": "جنس",
+            "fra": "Le genre"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "gender",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "residenceStatus7",
+        "description": "Residence status",
+        "labelName": {
+            "eng": "Residence Status",
+            "ara": "حالة الإقامة",
+            "fra": "Statut de résidence"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "residenceStatus",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "7addressLine1",
+        "description": "addressLine1",
+        "labelName": {
+            "eng": "Address Line1",
+            "ara": "العنوان السطر 1",
+            "fra": "Adresse 1"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "7addressLine2",
+        "description": "addressLine2",
+        "labelName": {
+            "eng": "Address Line2",
+            "ara": "العنوان السطر 2",
+            "fra": "Adresse 2"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "7addressLine3",
+        "description": "addressLine3",
+        "labelName": {
+            "eng": "Address Line3",
+            "ara": "العنوان السطر 3",
+            "fra": "Adresse 3"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "region7",
+        "description": "region",
+        "labelName": {
+            "eng": "Region",
+            "ara": "منطقة",
+            "fra": "Région"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "parentLocCode": "MOR",
+        "locationHierarchyLevel": 1,
+        "required": true
+    },
+    {
+        "id": "province7",
+        "description": "province",
+        "labelName": {
+            "eng": "Province",
+            "ara": "المحافظة",
+            "fra": "Province"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 2,
+        "required": true
+    },
+    {
+        "id": "city7",
+        "description": "city",
+        "labelName": {
+            "eng": "City",
+            "ara": "مدينة",
+            "fra": "Ville"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 3,
+        "required": true
+    },
+    {
+        "id": "zone7",
+        "description": "zone",
+        "labelName": {
+            "eng": "Zone",
+            "ara": "منطقة",
+            "fra": "Zone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "locationHierarchyLevel": 4,
+        "required": true
+    },
+    {
+        "id": "postalCode7",
+        "description": "postalCode",
+        "labelName": {
+            "eng": "Postal Code",
+            "ara": "الكود البريدى",
+            "fra": "code postal"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[(?i)A-Z0-9]{5}$|^NA$",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 5,
+        "required": true
+    },
+    {
+        "id": "phone7",
+        "description": "phone",
+        "labelName": {
+            "eng": "Phone",
+            "ara": "هاتف",
+            "fra": "Téléphone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^([6-9]{1})([0-9]{9})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "email7",
+        "description": "email",
+        "labelName": {
+            "eng": "Email",
+            "ara": "البريد الإلكتروني",
+            "fra": "Email"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-zA-Z]{2,})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "salary7",
+        "description": "Enter Salary",
+        "labelName": {
+            "eng": "Salary",
+            "ara": "راتب",
+            "fra": "Salaire"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "number",
+        "subType": "salary",
+        "type": "string",
+        "validators": [
+            {
+                "type": "min",
+                "value": 0,
+                "message": {
+                    "eng": "Salary must be a positive number",
+                    "ara": "يجب أن يكون الراتب رقمًا موجبًا",
+                    "fra": "Le salaire doit être un nombre positif"
+                }
+            }
+        ],
+        "required": true,
+        "dependentFields": [
+            {
+                "fieldId": "panNumber7"
+            }
+        ]
+    },
+    {
+        "id": "panNumber7",
+        "description": "Enter Pan Number",
+        "labelName": {
+            "eng": "Pan Number",
+            "ara": "رقم بان",
+            "fra": "Numéro PAN"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "required": true,
+        "parentField": "salary7",
+        "isVisible": false,
+        "visibleCondition": {
+            "any": [
+                {
+                    "fact": "salary7",
+                    "operator": "greaterThanInclusive",
+                    "value": 7000
+                }
+            ]
+        }
+    },
+    {
+        "id": "fullName8",
+        "description": "Enter Full Name",
+        "labelName": {
+            "eng": "Full Name",
+            "ara": "الاسم الكامل",
+            "fra": "Nom complet"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "dateOfBirth8",
+        "description": "Enter DOB",
+        "labelName": {
+            "eng": "Date Of Birth",
+            "ara": "تاريخ الولادة",
+            "fra": "Date de naissance"
+        },
+        "controlType": "ageDate",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "gende8r",
+        "description": "Enter Gender",
+        "labelName": {
+            "eng": "Gender",
+            "ara": "جنس",
+            "fra": "Le genre"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "gender",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "residenceStatus8",
+        "description": "Residence status",
+        "labelName": {
+            "eng": "Residence Status",
+            "ara": "حالة الإقامة",
+            "fra": "Statut de résidence"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "residenceStatus",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "8addressLine1",
+        "description": "addressLine1",
+        "labelName": {
+            "eng": "Address Line1",
+            "ara": "العنوان السطر 1",
+            "fra": "Adresse 1"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "8addressLine2",
+        "description": "addressLine2",
+        "labelName": {
+            "eng": "Address Line2",
+            "ara": "العنوان السطر 2",
+            "fra": "Adresse 2"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "8addressLine3",
+        "description": "addressLine3",
+        "labelName": {
+            "eng": "Address Line3",
+            "ara": "العنوان السطر 3",
+            "fra": "Adresse 3"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "region8",
+        "description": "region",
+        "labelName": {
+            "eng": "Region",
+            "ara": "منطقة",
+            "fra": "Région"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "parentLocCode": "MOR",
+        "locationHierarchyLevel": 1,
+        "required": true
+    },
+    {
+        "id": "province8",
+        "description": "province",
+        "labelName": {
+            "eng": "Province",
+            "ara": "المحافظة",
+            "fra": "Province"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 2,
+        "required": true
+    },
+    {
+        "id": "city8",
+        "description": "city",
+        "labelName": {
+            "eng": "City",
+            "ara": "مدينة",
+            "fra": "Ville"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 3,
+        "required": true
+    },
+    {
+        "id": "zone8",
+        "description": "zone",
+        "labelName": {
+            "eng": "Zone",
+            "ara": "منطقة",
+            "fra": "Zone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "locationHierarchyLevel": 4,
+        "required": true
+    },
+    {
+        "id": "postalCode8",
+        "description": "postalCode",
+        "labelName": {
+            "eng": "Postal Code",
+            "ara": "الكود البريدى",
+            "fra": "code postal"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[(?i)A-Z0-9]{5}$|^NA$",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 5,
+        "required": true
+    },
+    {
+        "id": "phone8",
+        "description": "phone",
+        "labelName": {
+            "eng": "Phone",
+            "ara": "هاتف",
+            "fra": "Téléphone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^([6-9]{1})([0-9]{9})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "email8",
+        "description": "email",
+        "labelName": {
+            "eng": "Email",
+            "ara": "البريد الإلكتروني",
+            "fra": "Email"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-zA-Z]{2,})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "salary8",
+        "description": "Enter Salary",
+        "labelName": {
+            "eng": "Salary",
+            "ara": "راتب",
+            "fra": "Salaire"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "number",
+        "subType": "salary",
+        "type": "string",
+        "validators": [
+            {
+                "type": "min",
+                "value": 0,
+                "message": {
+                    "eng": "Salary must be a positive number",
+                    "ara": "يجب أن يكون الراتب رقمًا موجبًا",
+                    "fra": "Le salaire doit être un nombre positif"
+                }
+            }
+        ],
+        "required": true,
+        "dependentFields": [
+            {
+                "fieldId": "panNumber8"
+            }
+        ]
+    },
+    {
+        "id": "panNumber8",
+        "description": "Enter Pan Number",
+        "labelName": {
+            "eng": "Pan Number",
+            "ara": "رقم بان",
+            "fra": "Numéro PAN"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "required": true,
+        "parentField": "salary8",
+        "isVisible": false,
+        "visibleCondition": {
+            "any": [
+                {
+                    "fact": "salary8",
+                    "operator": "greaterThanInclusive",
+                    "value": 7000
+                }
+            ]
+        }
+    },
+    {
+        "id": "fullName9",
+        "description": "Enter Full Name",
+        "labelName": {
+            "eng": "Full Name",
+            "ara": "الاسم الكامل",
+            "fra": "Nom complet"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "dateOfBirth9",
+        "description": "Enter DOB",
+        "labelName": {
+            "eng": "Date Of Birth",
+            "ara": "تاريخ الولادة",
+            "fra": "Date de naissance"
+        },
+        "controlType": "ageDate",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "gender9",
+        "description": "Enter Gender",
+        "labelName": {
+            "eng": "Gender",
+            "ara": "جنس",
+            "fra": "Le genre"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "gender",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "residenceStatus9",
+        "description": "Residence status",
+        "labelName": {
+            "eng": "Residence Status",
+            "ara": "حالة الإقامة",
+            "fra": "Statut de résidence"
+        },
+        "controlType": "dropdown",
+        "inputRequired": true,
+        "fieldType": "dynamic",
+        "subType": "residenceStatus",
+        "type": "simpleType",
+        "validators": [],
+        "required": true
+    },
+    {
+        "id": "9addressLine1",
+        "description": "addressLine1",
+        "labelName": {
+            "eng": "Address Line1",
+            "ara": "العنوان السطر 1",
+            "fra": "Adresse 1"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": true,
+        "transliteration": true
+    },
+    {
+        "id": "9addressLine2",
+        "description": "addressLine2",
+        "labelName": {
+            "eng": "Address Line2",
+            "ara": "العنوان السطر 2",
+            "fra": "Adresse 2"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "9addressLine3",
+        "description": "addressLine3",
+        "labelName": {
+            "eng": "Address Line3",
+            "ara": "العنوان السطر 3",
+            "fra": "Adresse 3"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "required": false,
+        "transliteration": true
+    },
+    {
+        "id": "region9",
+        "description": "region",
+        "labelName": {
+            "eng": "Region",
+            "ara": "منطقة",
+            "fra": "Région"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "parentLocCode": "MOR",
+        "locationHierarchyLevel": 1,
+        "required": true
+    },
+    {
+        "id": "province9",
+        "description": "province",
+        "labelName": {
+            "eng": "Province",
+            "ara": "المحافظة",
+            "fra": "Province"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 2,
+        "required": true
+    },
+    {
+        "id": "city9",
+        "description": "city",
+        "labelName": {
+            "eng": "City",
+            "ara": "مدينة",
+            "fra": "Ville"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^(?=.{0,50}$).*",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 3,
+        "required": true
+    },
+    {
+        "id": "zone9",
+        "description": "zone",
+        "labelName": {
+            "eng": "Zone",
+            "ara": "منطقة",
+            "fra": "Zone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "locationHierarchyLevel": 4,
+        "required": true
+    },
+    {
+        "id": "postalCode9",
+        "description": "postalCode",
+        "labelName": {
+            "eng": "Postal Code",
+            "ara": "الكود البريدى",
+            "fra": "code postal"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[(?i)A-Z0-9]{5}$|^NA$",
+                "arguments": []
+            }
+        ],
+        "locationHierarchyLevel": 5,
+        "required": true
+    },
+    {
+        "id": "phone9",
+        "description": "phone",
+        "labelName": {
+            "eng": "Phone",
+            "ara": "هاتف",
+            "fra": "Téléphone"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^([6-9]{1})([0-9]{9})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "email9",
+        "description": "email",
+        "labelName": {
+            "eng": "Email",
+            "ara": "البريد الإلكتروني",
+            "fra": "Email"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [
+            {
+                "type": "regex",
+                "validator": "^[\\w-\\+]+(\\.[\\w]+)*@[\\w-]+(\\.[\\w]+)*(\\.[a-zA-Z]{2,})$",
+                "arguments": []
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "salary9",
+        "description": "Enter Salary",
+        "labelName": {
+            "eng": "Salary",
+            "ara": "راتب",
+            "fra": "Salaire"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "number",
+        "subType": "salary",
+        "type": "string",
+        "validators": [
+            {
+                "type": "min",
+                "value": 0,
+                "message": {
+                    "eng": "Salary must be a positive number",
+                    "ara": "يجب أن يكون الراتب رقمًا موجبًا",
+                    "fra": "Le salaire doit être un nombre positif"
+                }
+            }
+        ],
+        "required": true,
+        "dependentFields": [
+            {
+                "fieldId": "panNumber9"
+            }
+        ]
+    },
+    {
+        "id": "panNumber9",
+        "description": "Enter Pan Number",
+        "labelName": {
+            "eng": "Pan Number",
+            "ara": "رقم بان",
+            "fra": "Numéro PAN"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "required": true,
+        "parentField": "salary9",
+        "isVisible": false,
+        "visibleCondition": {
+            "any": [
+                {
+                    "fact": "salary9",
+                    "operator": "greaterThanInclusive",
+                    "value": 7000
+                }
+            ]
+        }
+    },
+    {
+        "id": "employeeStatus",
+        "description": "Enter Employee Status",
+        "labelName": {
+            "eng": "Employee Status",
+            "ara": "حالة الموظف",
+            "fra": "Statut de l'employé"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": true,
+        "dependentFields": [
+            {
+                "fieldId": "empCode"
+            },
+            {
+                "fieldId": "projectCode"
+            }
+        ]
+    },
+    {
+        "id": "empCode",
+        "description": "Enter Employee Code (if active)",
+        "labelName": {
+            "eng": "Employee Code",
+            "ara": "رمز الموظف",
+            "fra": "Code employé"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "simpleType",
+        "validators": [],
+        "required": false,
+        "parentField": "employeeStatus",
+        "requiredCondition": {
+            "all": [
+                {
+                    "fact": "employeeStatus",
+                    "operator": "notEqual",
+                    "value": ""
+                },
+                {
+                    "fact": "employeeStatus",
+                    "operator": "equal",
+                    "value": "active"
+                }
+            ]
+        }
+    },
+    {
+        "id": "projectCode",
+        "description": "Enter Project Code (if employee is active)",
+        "labelName": {
+            "eng": "Project Code",
+            "ara": "رمز المشروع",
+            "fra": "Code de projet"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "required": false,
+        "parentField": "employeeStatus",
+        "isVisible": false,
+        "visibleCondition": {
+            "all": [
+                {
+                    "fact": "employeeStatus",
+                    "operator": "equal",
+                    "value": "active"
+                }
+            ]
+        }
+    },
+    {
+        "id": "userCase",
+        "renderID": "frm_3a_usercase",
+        "description": " Desired Service",
+        "labelName": {
+            "eng": "Choose your desired service"
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "subType": "userCase",
+        "type": "string",
+        "fieldCategory": "none",
+        "validators": [],
+        "dependentFields": [
+            {
+                "fieldId": "applicantPlaceOfBirthInUganda"
+            },
+            {
+                "fieldId": "applicantPlaceOfBirthOutsideUganda"
+            }
+        ],
+        "required": true
+    },
+    {
+        "id": "applicantPlaceOfBirthInUganda",
+        "description": "Place Of Residence ",
+        "renderID": "frm_3a_a3_birth",
+        "labelName": {
+            "eng": "In Uganda "
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "parentField": [
+            {
+                "fieldId": "userCase"
+            }
+        ],
+        "requiredCondition": {
+            "all": [
+                {
+                    "fact": "userCase",
+                    "operator": "notEqual",
+                    "value": "RENEWAL"
+                },
+                {
+                    "fact": "userCase",
+                    "operator": "notEqual",
+                    "value": "LOST"
+                }
+            ]
+        },
+        "visibleCondition": {
+            "all": [
+                {
+                    "fact": "userCase",
+                    "operator": "notEqual",
+                    "value": "RENEWAL"
+                },
+                {
+                    "fact": "userCase",
+                    "operator": "notEqual",
+                    "value": "LOST"
+                }
+            ]
+        },
+        "dependentFields": [
+            {
+                "fieldId": "applicantPlaceOfBirthOutsideUganda"
+            }
+        ]
+    },
+    {
+        "id": "applicantPlaceOfBirthOutsideUganda",
+        "description": "Place Of Residence ",
+        "renderID": "frm_3a_a3_birth",
+        "labelName": {
+            "eng": " Out side Uganda "
+        },
+        "controlType": "textbox",
+        "inputRequired": true,
+        "fieldType": "default",
+        "type": "string",
+        "validators": [],
+        "parentField": [
+            {
+                "fieldId": "userCase"
+            },
+            {
+                "fieldId": "applicantPlaceOfBirthInUganda"
+            }
+        ],
+        "requiredCondition": {
+            "all": [
+                {
+                    "fact": "userCase",
+                    "operator": "notEqual",
+                    "value": "RENEWAL"
+                },
+                {
+                    "fact": "userCase",
+                    "operator": "notEqual",
+                    "value": "LOST"
+                },
+                {
+                    "fact": "applicantPlaceOfBirthInUganda",
+                    "operator": "equal",
+                    "value": "NO"
+                }
+            ]
+        },
+        "visibleCondition": {
+            "all": [
+                {
+                    "fact": "userCase",
+                    "operator": "notEqual",
+                    "value": "RENEWAL"
+                },
+                {
+                    "fact": "userCase",
+                    "operator": "notEqual",
+                    "value": "LOST"
+                },
+                {
+                    "fact": "applicantPlaceOfBirthInUganda",
+                    "operator": "equal",
+                    "value": "NO"
+                }
+            ]
+        }
+    }
+]

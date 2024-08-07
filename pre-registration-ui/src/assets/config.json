@@ -1,0 +1,4 @@
+{
+  "BASE_URL": "https://api-internal.onpremdev.idencode.link/",
+  "PRE_REG_URL": "preregistration/v1/"
+}
